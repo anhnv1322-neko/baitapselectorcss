@@ -1,0 +1,189 @@
+/* 1. Universal Reset & Base Setup */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 2. Top Bar Announcement */
+
+.top-bar[data-status="active"] {
+    background: #0f172a;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.top-bar a {
+    color: #fbbf24;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+/* 3. Header & Brand */
+
+#site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 20px 0;
+}
+
+.brand__logo > span {
+    color: #2563eb;
+}
+
+.brand__logo--light {
+    color: #ffffff;
+}
+
+/* 4. Navigation & Menu States */
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu-link {
+    display: block;
+    padding: 12px 16px;
+}
+
+.menu-link.is-active {
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+}
+
+.menu-link:hover {
+    color: #2563eb;
+    transition: 0.3s;
+}
+
+/* 5. Main & Sidebar */
+
+.main-content {
+    display: flex;
+    gap: 30px;
+}
+
+.primary-column {
+    width: 70%;
+}
+
+.secondary-column {
+    width: 30%;
+}
+
+/* 6. Hero Article & Badge */
+
+.hero-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.hero-card__media {
+    position: relative;
+}
+
+.badge--danger {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #dc2626;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* 7. Articles Grid */
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.post-card:hover img {
+    transform: scale(1.05);
+}
+
+.post-card img {
+    transition: 0.3s;
+}
+
+/* 8. Ranking List */
+
+.ranking-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.ranking-item:first-child {
+    border-left: 4px solid #f97316;
+}
+
+.ranking-item:nth-child(2) {
+    border-left: 4px solid #f97316;
+}
+
+.ranking-item:nth-child(3) {
+    border-left: 4px solid #f97316;
+}
+
+.ranking-item:last-child {
+    border-bottom: none;
+}
+
+/* 9. Subscribe Form */
+
+input[type="search"] {
+    background: #f1f5f9;
+    border-radius: 999px;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
+/* 10. Footer & Social Links */
+
+#site-footer {
+    background: #0f172a;
+    color: #94a3b8;
+}
+
+#site-footer a:hover {
+    color: #ffffff;
+}

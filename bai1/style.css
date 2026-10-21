@@ -1,0 +1,182 @@
+/* Bước 1 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #333333;
+    background: #f4f6f8;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #0284c7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Bước 2 */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#main-header {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 25px 0;
+}
+
+.logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.logo__highlight {
+    color: #38bdf8;
+}
+
+/* Bước 3 */
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 12px 16px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: #0284c7;
+    border-radius: 4px;
+}
+
+/* Bước 4 */
+
+.main-layout {
+    display: flex;
+    gap: 30px;
+    margin: 30px auto;
+}
+
+.content-primary {
+    width: 70%;
+}
+
+.sidebar {
+    width: 28%;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.card--featured {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.card__badge {
+    position: absolute;
+    background: #e11d48;
+    color: #ffffff;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+
+.card__title {
+    font-size: 1.2rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.card__category {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #0284c7;
+    font-weight: bold;
+}
+
+/* Bước 5 */
+
+.trending-item {
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.trending-item:last-child {
+    border-bottom: none;
+}
+
+.trending-num {
+    font-size: 1.5rem;
+}
+
+.trending-item:nth-child(1) .trending-num {
+    color: #ef4444;
+}
+
+.trending-item:nth-child(2) .trending-num {
+    color: #f59e0b;
+}
+
+.trending-item:nth-child(3) .trending-num {
+    color: #10b981;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.btn--primary {
+    background: #0284c7;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn--primary:hover {
+    background: #0369a1;
+}
+
+/* Bước 6 */
+
+#main-footer {
+    background: #0f172a;
+    color: #94a3b8;
+    padding: 20px 0;
+}
+
+.footer__links a {
+    color: #94a3b8;
+    margin-left: 15px;
+}
+
+.footer__links a:hover {
+    color: #ffffff;
+}
